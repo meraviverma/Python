@@ -1,0 +1,110 @@
+Annaconda , cannapy
+
+Python Collection:
+----------------------
+sequence
+--------------
+Mutable :---> Lists
+Immutable :----> Tuples, Strings
+
+Sets
+--------
+Mutable :----> Sets
+Immutable :----> Frozen Sets
+
+Mapping
+---------
+Dictionaries
+
+> Dictionaries and sets are actually related. They both are bascially hash map.
+The only difference is that set are not key value pair. It means it is a dictionary which only has keys but no values.
+
+
+Callables:
+-------------
+User-defined functions
+Generators
+Classes
+Instance method.
+Class Instance (__call__())
+built-in function(len(),open())
+Built-in method (my_list.append(x))
+
+Implicit:
+--------------
+list literals:[]
+tuple literals: ()
+dicitonary literals: {}
+set literals: {}
+
+Explicit:
+-----------
+You can break up statement over multiple lines explicitily by using \(backslash) character
+Multi-line statements are not implicit converted to single logical line.
+
+Example:
+
+if a
+	and b
+	and c:
+
+this will not work
+
+if a \
+		and b \
+		and c:
+This will work.
+
+Multi-Line string literal:
+------------------------------
+''' this is
+a multi-line string'''
+
+""" This is
+a multi-line string"""
+
+Use can use escaped character( \n, \t) use string  formatting
+A multi-line string is just a regular string.
+	
+:::Basic Review:::	
+-------------------------------
+	
+Identifier are case-sensitive
+---------------------------------
+my_var
+my_Var are different
+
+Must start with underscore(_) or letter (a-z A-Z)
+	followed by any number of underscore(_), letter(a-z A-Z) or digits (0-9)
+cannot be reserved keywords
+
+No concept of private in python everything is public
+
+_my_var
+
+this is private object. It is a convention
+Object named this way will not get imported by a statement such as
+from module import*
+
+__my_var used to "mangle" class attributes (double underscore)
+
+__my_var__ system-defined names that have a special.
+
+__init__	
+
+
+Naming convention:
+----------------------
+Package: short, all-lower names,No underscore
+Modules: ahort,all-lower case.can have underscore
+Classes:  CapWords(Upper camel case) BankAccount	
+Functions: lowercase, words seprated by underscore
+variables: lowercase, words seprated by underscore(snake_case)
+constants: all-upercase,words seprated by underscore
+
+Lambda:
+---------------
+we don't need to give any name for the function.
+It is a regular object.
+
+>> We don't have overloading in python.

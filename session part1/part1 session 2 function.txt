@@ -1,0 +1,15 @@
+variables and Memory
+------------------------
+In Python, we can finds out the memory address reference by a variable
+by using the id() function.
+
+By using the hex() function we can find the hexdecimal value of that.
+
+reference counting
+---------------------
+Python Memory Manager is doing this.
+
+Finding the reference Count
+
+sys.getrefcount(my_var) <---- passing my_var to getrefcount() creates an extra reference.
+
