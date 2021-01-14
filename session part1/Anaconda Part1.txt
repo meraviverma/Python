@@ -1,0 +1,19 @@
+conda info --envs
+
+(base) C:\Users\RaviVerma>conda info --envs
+# conda environments:
+#
+base                  *  C:\ProgramData\Anaconda3
+
+
+(base) C:\Users\RaviVerma>conda update conda
+
+(base) C:\Users\RaviVerma>conda create --name pandas_playground
+
+(base) C:\Users\RaviVerma>conda activate pandas_playground
+
+(pandas_playground) C:\Users\RaviVerma> conda install pandas
+
+(base) C:\Users\RaviVerma>conda update pandas
+
+(pandas_playground) C:\Users\RaviVerma>conda install bottleneck numexpr matplotlib
