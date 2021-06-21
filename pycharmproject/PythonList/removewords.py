@@ -58,3 +58,56 @@ removeCommonWords(sentence1, sentence2)
 # Counter({'raj': 1, 'likes': 1, 'sky': 1, 'blue': 1, 'color': 1})
 # ['is', 'in']
 # ['raj', 'likes']
+#Approach 2
+print("######### Approach 2 ############")
+def commonwords(set1,set2):
+    sen1=set(set1)
+    sen2=set(set2)
+
+    print(sen1)
+    print(sen2)
+
+    common=list(sen1.intersection(sen2))
+
+    print(common)
+    return  common
+
+def removecommon(sent1,sent2):
+    sente1=list(sent1.split())
+    sente2=list(sent2.split())
+
+    commonlist=commonwords(sente1,sente2)
+
+    words=0
+    for i in range(len(sente1)):
+        if sente1[words] in commonlist:
+            sente1.pop(words)
+
+            words=words-1
+        words+=1
+
+    words =0
+
+    for i in range(len(sente2)):
+        if sente2[words] in commonlist:
+            sente2.pop(words)
+            words=words-1
+        words+=1
+    print("#### After removing words ############")
+    print(*sente1)
+    print(*sente2)
+
+######## OUTPUT ####################
+# Counter({'sky': 1, 'is': 1, 'blue': 1, 'in': 1, 'color': 1})
+# Counter({'raj': 1, 'likes': 1, 'sky': 1, 'blue': 1, 'color': 1})
+# is in
+# raj likes
+# ######### Approach 2 ############
+# {'is', 'sky', 'in', 'blue', 'color'}
+# {'sky', 'likes', 'raj', 'blue', 'color'}
+# ['sky', 'blue', 'color']
+# #### After removing words ############
+# is in
+# raj likes
+
+removecommon(sentence1,sentence2)

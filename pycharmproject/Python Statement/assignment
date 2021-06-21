@@ -1,0 +1,93 @@
+PyDev console: starting.
+Python 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 20:34:20) [MSC v.1916 64 bit (AMD64)] on win32
+a,b=ram,tam
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+NameError: name 'ram' is not defined
+
+ram=1
+tam=1
+a,b=ram,tam
+>>a
+1
+>>b
+1
+
+[c,d]=[ram,tam]
+>>c,d
+(1, 1)
+
+>>a,b
+(1, 1)
+
+[a,b,c]=[1,2,3]
+... a
+>>a,b
+(1, 2)
+
+(a,b,c)="ABC"
+
+>>a,b
+('A', 'B')
+
+>>a,c
+('A', 'C')
+
+string='SPAM'
+... a,b,c,d=string
+... a,b
+
+>>a,d
+('S', 'M')
+
+>>a,b,c
+('S', 'P', 'A')
+
+a,b,c=string
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+ValueError: too many values to unpack (expected 3)
+seq=[1,2,3,4]
+
+a,b,c,d=seq
+
+>>a,b
+(1, 2)
+
+a,b,c,d,*e=seq
+
+>>a,b
+(1, 2)
+
+>>e
+[]
+
+
+
+>>a,b,c=seq
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+ValueError: too many values to unpack (expected 3)
+
+>>a,b=seq
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+ValueError: too many values to unpack (expected 2)
+
+>>a,*b=seq
+a
+1
+b
+[2, 3, 4]
+
+*a,*b=seq
+  File "<input>", line 1
+SyntaxError: two starred expressions in assignment
+
+*a,b=seq
+
+>>a
+[1, 2, 3]
+
+>>b
+4
