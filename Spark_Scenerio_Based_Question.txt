@@ -1,2 +1,201 @@
 Spark Scenerio Based Question:
 -------------------------------------
+
+How to Get NULL count of each column in Pyspark in Databricks ?
+
+
+-------------------------------------------------
+						DAY1
+-------------------------------------------------
+For below df
+C1 	C2	C3
+-----------
+1   1	1
+2   2	2
+3   3	3
+4   4	null
+5   5	5
+6  	6	6
+7   7	7
+8   8	null
+9   9	9
+
+Print null and next to null values in df.
+desired output is below
+
+Output:
+C1 		C2	C3
+4    	4   null
+5    	5   5
+8    	8   null
+9    	9   9
+
+-------------------------------------------------
+						DAY1
+-------------------------------------------------
+
+File 1 
+---------
+X Y Z
+1 2 3 
+4 5 6
+1 2 2 
+
+Fine 2
+----------
+X Y Z
+1 2 3 
+4 5 6
+1 2 2 
+
+How to add the sum of rows of this two files in spark? 
+
+E. G. 
+File 1 : 1st row 1 2 3 = 6
+File 2 : 1st row 1 2 3 = 6
+Final result would be 12
+
+-------------------------------------------------
+						DAY1
+-------------------------------------------------
+
+I have one requirement to fill values like this
+
+Input:
+1|abc
+2|bsf
+4|fed
+7|gdf
+
+Output:
+1|abc
+2|bsf
+3|bsf
+4|fed
+5|fed
+6|fed
+7|gdf
+
+-------------------------------------------------
+						DAY1
+-------------------------------------------------
+Hi all
+
+Question
+
+Input table 
+
+ID	Dept
+1	"D2000"
+2	"D2100"
+1	"D2100"
+3	"D1232"
+
+Output table 
+
+1  "D2000_D2100"
+2  "D2100"
+3  "D1232"
+
+-------------------------------------------------
+						DAY1
+-------------------------------------------------
+
+how to make this below input dataframe to reqrd output result in spark 
+
+driver, app, count
+d1,     app1, 10
+d1,     app2, 4
+d2,     app1, 5
+
+
+output :
+driver, app1_cnt,		app2_cnt
+d1     ,10               ,4
+d2     ,5                ,0
+
+
+-------------------------------------------------
+						DAY1
+-------------------------------------------------
+How can we count only those rows which have all rows null in spark?
+
+C1	c2	c3	c4
+A	b	c	d
+E	f 	g	h
+Null null null null
+Null null null null
+I 	j	k	l
+Null null null null
+M	n	o	p
+
+For example there are 3 rows which have null values for all columns.
+
+-------------------------------------------------
+						DAY1
+-------------------------------------------------
+In spark how can we acheive below?
+
+1 a
+1 b
+1 c
+2 b
+2 a
+
+To
+
+1 a b c
+2 a b
+
+
+-------------------------------------------------
+						DAY1
+-------------------------------------------------
+
+Val set1= Set("a","b","c")
+
+Csv file
+
+Id, usr, sal
+1,a,100
+2,b,200
+3,c,400
+5,x,10
+4,p,980
+
+Get salary of user present in set using Dataframe
+
+-------------------------------------------------
+						DAY1
+-------------------------------------------------
+Suppose you have bad records in date column,what i want is that bad records should come in different dataframe
+and other dataframe should contain the correct records.
+
+example:
+date	name
+1/12/2021	ravi
+2/12/2021	ram
+12/2021		sam
+
+so 12/2021 is bad record and i want to store it in different tables or say different dataframe.
+
+-------------------------------------------------
+						DAY1
+-------------------------------------------------
+Read a file in spark abc.txt having only one column URL. Get page name from URL column 
+
+Get Page Name:(https://myweb.com/dashboard, https://yourweb.com/index.jsp)
+
+
+-------------------------------------------------
+						DAY1
+-------------------------------------------------
+-------------------------------------------------
+						DAY1
+-------------------------------------------------
+-------------------------------------------------
+						DAY1
+-------------------------------------------------
+-------------------------------------------------
+						DAY1
+-------------------------------------------------
